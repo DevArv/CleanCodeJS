@@ -14,8 +14,8 @@ console.log('Value changed', age);
 let age = 30;
 
 {
-    console.log('Value inside the block', age);
     let age = 24;
+    console.log('Value inside the block', age);
 }
 
 console.log('Value outside the block', age);
