@@ -27,7 +27,7 @@ class UserDetails {
     }
 }
 
-//Definition of the child class UserIdentification
+//Definition of the child class UserInfo
 class UserInfo extends UserDetails {
     constructor(name, identification) {
         super(name);
