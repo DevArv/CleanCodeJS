@@ -23,24 +23,25 @@ class UserDetails {
     };
 
     verifyDetails() {
-        return true;
+        return false;
     }
 }
 
 //Definition of the child class UserIdentification
-class UserId extends UserDetails {
+class UserInfo extends UserDetails {
     constructor(name, identification) {
         super(name);
         this.identification = identification;
     }
 
-    changeId(identification) {
+    changeDetails(identification) {
         if(this.verifyDetails()) {
-            console.log('You can change the identification');
+            console.log("You can change the identification");
+        }else {
+        console.log("You are not allowed to change the details");
         }
-        console.log('You cant change the identification');
     }
 }
 
-const userCreate = new UserDetails("Alex", '001');
-userCreate.changeId(true);
+const newUpdate = new UserInfo("Alex", "001");
+newUpdate.changeDetails();
